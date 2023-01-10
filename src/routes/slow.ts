@@ -9,6 +9,7 @@ export async function slow(ctx: BaseContext): Promise<void> {
     const start = Date.now();
     const expectedEnd = start + 10000;
 
+    // eslint-disable-next-line no-constant-condition
     while (true) {
       // this is a heavy calculation
       const now: number = Date.now();

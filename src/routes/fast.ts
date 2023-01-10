@@ -11,6 +11,7 @@ export async function fast(ctx: BaseContext): Promise<void> {
 
     function next(): void {
       setImmediate(() => {
+        // eslint-disable-next-line no-constant-condition
         while (true) {
           // this is a heavy calculation
           const now: number = Date.now();
