@@ -1,5 +1,5 @@
+import Router from "@koa/router";
 import Koa from "koa";
-import Router from "koa-router";
 
 import { fast } from "./routes/fast";
 import { home } from "./routes/home";
